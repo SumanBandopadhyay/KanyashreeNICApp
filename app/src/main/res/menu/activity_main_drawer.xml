@@ -1,36 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/grp_home"
+        android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon_home"
+            android:title="Home" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+    <group
+        android:id="@+id/grp_view_events"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_view_events"
+            android:icon="@drawable/icon_view_events"
+            android:title="View Events" />
+    </group>
+
+    <group
+        android:id="@+id/grp_status_report"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_status_report"
+            android:icon="@drawable/icon_status_report"
+            android:title="Status Report" />
+    </group>
+
+    <group
+        android:id="@+id/grp_video_gallery"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_video_gallery"
+            android:icon="@drawable/icon_video_gallery"
+            android:title="Video Gallery" />
+    </group>
+
+    <group
+        android:id="@+id/grp_awards_and_recognitions"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_awards_and_recognitions"
+            android:icon="@drawable/icon_awards_and_recognition"
+            android:title="Awards and Recognitions" />
+    </group>
 
 </menu>
